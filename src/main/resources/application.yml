@@ -1,0 +1,22 @@
+spring:
+  user:
+    datasource:
+      jdbcUrl: jdbc:h2:mem:testdb
+      driverClassName: org.h2.Driver
+      username: sa
+      password: sa
+    jpa:
+      database-platform: org.hibernate.dialect.H2Dialect
+      show-sql: true
+
+  book:
+    datasource:
+      jdbcUrl: jdbc:mysql://localhost:3306/multidb
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+
+server:
+  port: 7000
+
+
